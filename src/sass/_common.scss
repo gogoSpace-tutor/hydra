@@ -1,6 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body{
-    max-width: 1440px;
+
     background: #302C42;
 }
 *{
@@ -12,4 +12,8 @@ input{
     &::placeholder{
         padding: 42px;
     }
+}
+
+html{
+    scroll-behavior: smooth;
 }

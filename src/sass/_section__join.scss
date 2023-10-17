@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1275px;
-    height: 1008px;
+    min-height: 1008px;
     flex-direction: column;
     margin: 0 auto;
     border-radius: 40px;
@@ -37,6 +37,7 @@
         font-weight: 300;
         line-height: 43.88px;
         margin-top: 20px;
+        
     }
     
     .join__input{
@@ -53,7 +54,7 @@
         
 
     }
-    .join__input__Subject{
+    .join__input__subject{
         width: 1058px;
         height: 72px;
         background-color: transparent;
@@ -64,7 +65,7 @@
             outline-color: #343045;
         }
     }
-    .join__input__Something{
+    .join__input__something{
         width: 1058px;
         height: 210px;
         background-color: transparent;
@@ -102,13 +103,13 @@
         }
     }
     
-  .join__input__Subject {
+  .join__input__subject {
     max-width: 864px;
     &::placeholder{
         padding: 21px;
     }
   }
-  .join__input__Something {
+  .join__input__something {
     max-width: 864px;
     &::placeholder{
         padding: 21px;
@@ -122,10 +123,12 @@
         margin: unset;
         padding: unset;
     }
-   div{
+    .join__div__input1,.join__div__input2{
     width: 300px;
     height: 150px;
-    
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-gap: 15px;
    }
 
     .join__input {
@@ -136,14 +139,14 @@
         }
     }
     
-  .join__input__Subject {
+  .join__input__subject {
         max-width: 300px;
         height: 53px;
         &::placeholder{
              padding: 29px;
         }
   }
-  .join__input__Something {
+  .join__input__something {
         max-width: 300px;
         height: 53px;
         &::placeholder{

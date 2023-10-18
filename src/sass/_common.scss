@@ -1,1 +1,19 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body{
+
+    background: #302C42;
+}
+*{
+    color:#FFFFFF;
+    font-family: Montserrat, 'serif';
+}
+
+input{
+    &::placeholder{
+        padding: 42px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}

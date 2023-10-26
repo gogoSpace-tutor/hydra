@@ -1,18 +1,22 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body{
-
     background: #302C42;
+    
 }
 *{
     color:#FFFFFF;
     font-family: Montserrat, 'serif';
 }
 
+a,li{
+    text-decoration: none;
+    list-style: none;
+}
+
 input{
     padding-left: 50px;
-
 }
 
-html{
+html {
     scroll-behavior: smooth;
-}
+  }

@@ -71,6 +71,9 @@ footer{
 }
 
 .footer__social__ul{
+    width: 292px;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
 }
@@ -79,9 +82,13 @@ footer{
 .footer__social__svg{
     width: 32px;
     height: 32px;
+
     transition:all ease-in-out 0.3s;
+    fill: #c0b7e8;
     &:hover{
-        transform: translateY(-20px);
+        fill: #8176AF;
+        transform: rotate(360deg);
+
     }
 }
 
@@ -207,7 +214,5 @@ a{
     .footer__social__text{
         font-size: 16px;
     }
-    .footer__copyright__text{
-
-    }
+    
 }

@@ -1,0 +1,218 @@
+footer{
+    max-width: 1270px;
+    height: 339.5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .footer__logo{
+        width: 184px;
+        height: 186px;
+        fill: #8176AF;
+    
+    }
+    
+}
+
+.footer__info{
+    width: 318px;
+    height: 200px;
+    display: flex;
+}
+
+.footer__info__ul{
+    display: flex;
+    flex-direction: column ; 
+    justify-content: space-around;
+}
+
+.footer__info__link{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+   
+}
+
+.footer__faq{
+    width: 285px;
+    height: 189px;
+    display: flex;
+}
+
+.footer__faq__ul{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+}
+
+.footer__faq__link{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+}
+
+.footer__social{
+    width: 363px;
+    height: 199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__social__text{
+    width: 206px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+.footer__social__ul{
+    width: 292px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer__social__svg{
+    width: 32px;
+    height: 32px;
+
+    transition:all ease-in-out 0.3s;
+    fill: #c0b7e8;
+    &:hover{
+        fill: #8176AF;
+        transform: rotate(360deg);
+
+    }
+}
+
+.footer__social__button {
+    border: 0;
+    width: 214px;
+    height: 48px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    color: #000;
+    transition: all ease-in-out 0.3s;
+    margin-bottom: 20px;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    &:hover{
+        color:  #fff;
+        text-shadow:0px 0px 5px  #fff;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        transform: scale(1.1);
+    }
+
+  }
+
+.footer__copyright{
+    display: flex;
+    max-width: 1269px;
+    height: 66px;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 59px;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer__copyright__text{
+    max-width: 693px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    align-self: center;
+}
+
+.footer__copyright__hr{
+        width: 1269px;
+        height: 0;
+        border-color: linear-gradient(
+          270deg,
+          #343045 0%,
+          #c0b7e8 34.9%,
+          #8176af 68.75%,
+          #343045 100%
+        );
+        border: 1px solid;
+        border-image-source: linear-gradient(
+          270deg,
+          #343045 0%,
+          #c0b7e8 34.9%,
+          #8176af 68.75%,
+          #343045 100%
+        );
+        border-image-slice: 1;
+        margin-bottom: 49px;
+      
+}
+
+.footer__info__hr,.footer__faq__hr,.footer__social__hr{
+    height: 196px;
+    width: 0;
+    background: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #C0B7E8 35.21%, #8176AF 68.91%, #343045 99.5%);
+    border: 3px solid;
+    border-image-source: linear-gradient(179.87deg, #343045 0.47%, #343045 0.47%, #C0B7E8 35.21%, #8176AF 68.91%, #343045 99.5%);
+    border-image-slice: 1;
+    margin: 0 auto;
+}
+
+a{
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    &:hover{
+        color:  #8176af;
+        text-shadow:0px 0px 5px  #8176af;
+        -moz-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+}
+
+.footer__social__flex{
+    display: none;
+}
+
+@media screen and (max-width:425px) {
+    .footer__social__hr,.footer__faq,.footer__info{
+        flex-direction: column;
+        display: none;
+        
+    }
+    footer{
+        height: 507px;
+        margin: 81px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__logo{
+
+    }
+    .footer__social{
+        width: 285px;
+        height: 189px;
+    }
+    .footer__social__text{
+        font-size: 16px;
+    }
+    
+}

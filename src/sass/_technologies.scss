@@ -1,0 +1,135 @@
+$color_1: white;
+$font-family_1: Montserrat;
+$background-color_1: #302c42;
+
+body {
+	margin: 0;
+	background-color: $background-color_1;
+}
+.tech-section {
+	margin: 50px 78px 50px 84px;
+}
+.mask-group {
+	margin: 0;
+	padding: 0;
+}
+.glass-img {
+	width: 100%;
+}
+.img-text {
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	margin-top: -15%;
+	text-align: center;
+	color: $color_1;
+}
+.main-text {
+	font-weight: 700;
+	font-size: 36px;
+	font-family: $font-family_1;
+	margin: 0 0 10px 0;
+}
+.secondary-text {
+	font-weight: 300;
+	font-size: 36px;
+	font-family: $font-family_1;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.scroll-down {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+.down {
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+}
+.img-group {
+	margin: 45px 0 60px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.img-logo-1 {
+	width: 172px;
+	height: 172px;
+}
+.img-logo-2 {
+	width: 252px;
+	height: 252px;
+}
+.img-logo-3 {
+	width: 263px;
+	height: 263px;
+}
+.img-logo-4 {
+	width: 282px;
+	height: 282px;
+}
+@media screen and (max-width: 425px) {
+	.tech-section {
+		margin: 50px 25px 50px 17px;
+	}
+	.mask-group {
+		margin: 0;
+		padding: 0;
+	}
+	.glass-img {
+		width: 100%;
+	}
+	.img-text {
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+		margin-top: -20%;
+		text-align: center;
+		color: $color_1;
+	}
+	.main-text {
+		font-weight: 700;
+		font-size: 16px;
+		font-family: $font-family_1;
+		margin: 0;
+	}
+	.secondary-text {
+		font-weight: 300;
+		font-size: 16px;
+		font-family: $font-family_1;
+		margin: 0;
+	}
+	.scroll-down {
+		display: flex;
+		justify-content: center;
+		vertical-align: middle;
+	}
+	.down {
+		z-index: 1;
+		width: 62px;
+		height: 62px;
+	}
+	.arrow-down {
+		width: 100%;
+	}
+	.img-group {
+		margin: 45px 0 60px 0;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.img-logo-1 {
+		width: 172px;
+		height: 172px;
+	}
+	.img-logo-2 {
+		display: none;
+	}
+	.img-logo-3 {
+		display: none;
+	}
+	.img-logo-4 {
+		display: none;
+	}
+}

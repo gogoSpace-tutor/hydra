@@ -1,0 +1,132 @@
+.about{
+    display: flex;
+    margin: 0 auto;
+    height: 756px;
+    width: 100%;
+    
+}
+
+.introduction{
+    max-width: 777px;
+    height: 756px;
+    .introduction__h2{
+        width: 298px;
+        height: 44px;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .introduction__text{
+        width: 251px;
+        height: 44px;
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0;
+    }
+    .introduction__arrow{
+        width: 228px;
+        height: 100px;
+        margin-top: -74px;
+        margin-left: 300px;
+        margin-bottom:100px;
+        fill: none;
+        stroke: #c0b7e8;
+        stroke-width: 0.96px;
+        stroke-miterlimit: 4;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+    }
+    .introduction__img{
+        max-width: 524px;
+        height: 557px;
+        
+    }
+}
+
+.hydra{
+    .hydra__text{
+        width: 652px;
+        height: 98px;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 151px;
+    }
+    .hydra__h2{
+        width: 136px;
+        height: 44px;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .vr__text{
+        width: 192px;
+        height: 44px;
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0;
+    }
+    .vr__info{
+        
+        font-size: 16px;
+        
+    }
+
+    .vr__button{
+        border: 0;
+        width: 214px;
+        height: 48px;
+        border-radius: 40px;
+        background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+        color: #000;
+        transition: all ease-in-out 0.3s;
+        margin-bottom: 20px;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        &:hover{
+            color:  #fff;
+            text-shadow:0px 0px 5px  #fff;
+            -moz-transition: all 0.3s ease-in;
+            -o-transition: all 0.3s ease-in;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (max-width:425px){
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hydra{
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction{
+        max-width: 100%;
+    }
+    .vr__info{
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+    }
+    .hydra__h2,.hydra__text,.introduction__arrow,.vr__text{
+        display: none;
+    }
+    .introduction__img{
+        max-width: 336px;
+        max-height: 338px;
+    }
+    .vr__button{
+        align-self: center;
+    }
+}
+@media screen and (max-width:340px){
+    .about{
+        margin-bottom: 100px;
+    }
+}

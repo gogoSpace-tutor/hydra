@@ -1,10 +1,11 @@
 .join {
   display: flex;
+  padding: 0 15px;
   background: radial-gradient(50% 50% at 50% 50%, #403a5f 0%, #211e2e 100%);
   justify-content: space-between;
   align-items: center;
-  max-width: 1275px;
-  min-height: 1008px;
+  max-width: 1305px;
+  height: 1008px;
   flex-direction: column;
   margin: 0 auto;
   border-radius: 40px;
@@ -18,30 +19,27 @@
     height: 44px;
     font-size: 36px;
     font-weight: 700;
-
   }
 
-  hr{
-      width: 414px;
-      height: 0;
-      border-color: linear-gradient(
-        270deg,
-        #343045 0%,
-        #c0b7e8 34.9%,
-        #8176af 68.75%,
-        #343045 100%
-      );
-      border: 1px solid;
-      border-image-source: linear-gradient(
-        270deg,
-        #343045 0%,
-        #c0b7e8 34.9%,
-        #8176af 68.75%,
-        #343045 100%
-      );
-      border-image-slice: 1;
-      
-    
+  hr {
+    width: 414px;
+    height: 0;
+    border-color: linear-gradient(
+      270deg,
+      #343045 0%,
+      #c0b7e8 34.9%,
+      #8176af 68.75%,
+      #343045 100%
+    );
+    border: 1px solid;
+    border-image-source: linear-gradient(
+      270deg,
+      #343045 0%,
+      #c0b7e8 34.9%,
+      #8176af 68.75%,
+      #343045 100%
+    );
+    border-image-slice: 1;
   }
 
   .join__text {
@@ -62,8 +60,8 @@
     border-radius: 40px;
     transition: 0.2s;
     &:focus {
-        border: 4px solid #8176AF;
-        outline: #211e2e;
+      border: 4px solid #8176af;
+      outline: #211e2e;
     }
   }
   .join__input__subject {
@@ -74,8 +72,8 @@
     border-radius: 40px;
     transition: 0.2s;
     &:focus {
-        border: 4px solid  #8176AF;
-        outline: #211e2e;
+      border: 4px solid #8176af;
+      outline: #211e2e;
     }
   }
   .join__input__something {
@@ -86,8 +84,8 @@
     border-radius: 40px;
     transition: 0.2s;
     &:focus {
-        border: 4px solid  #8176AF;
-        outline: #211e2e;
+      border: 4px solid #8176af;
+      outline: #211e2e;
     }
   }
   .join__button {
@@ -103,14 +101,14 @@
     -o-transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    &:hover{
-        color:  #fff;
-        text-shadow:0px 0px 5px  #fff;
-        -moz-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        -webkit-transition: all 0.3s ease-in;
-        transition: all 0.3s ease-in;
-        transform: scale(1.1);
+    &:hover {
+      color: #fff;
+      text-shadow: 0px 0px 5px #fff;
+      -moz-transition: all 0.3s ease-in;
+      -o-transition: all 0.3s ease-in;
+      -webkit-transition: all 0.3s ease-in;
+      transition: all 0.3s ease-in;
+      transform: scale(1.1);
     }
   }
 }
@@ -136,7 +134,11 @@
     }
   }
 }
-
+@media screen and (max-width: 882px) {
+  .join__input {
+    max-width: 400px;
+  }
+}
 @media screen and (max-width: 425px) {
   .join {
     margin: unset;
@@ -177,23 +179,18 @@
 
 @media screen and (max-width: 425px) {
   hr {
-
-      max-width: 400px;
+    max-width: 400px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  hr{
-
-      max-width: 350px;
-    
+  hr {
+    max-width: 350px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  hr{
-   
-      max-width: 300px;
-    
+  hr {
+    max-width: 300px;
   }
 }
